@@ -10,4 +10,7 @@
 
 @interface RKDViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIButton *addCompanyButton;
+- (IBAction)addCompanyButtonTouched:(id)sender;
+
 @end

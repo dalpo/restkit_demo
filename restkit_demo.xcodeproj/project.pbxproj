@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		118254FA21314B2D97707815 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A3306DDD8BDE414883EC56FC /* libPods.a */; };
 		D6CBC11418166CD2003E6881 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6CBC11318166CD2003E6881 /* UIKit.framework */; };
 		D6CBC11618166CD2003E6881 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6CBC11518166CD2003E6881 /* Foundation.framework */; };
 		D6CBC11818166CD2003E6881 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6CBC11718166CD2003E6881 /* CoreGraphics.framework */; };
@@ -18,9 +19,13 @@
 		D6CBC12A18166CD2003E6881 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D6CBC12918166CD2003E6881 /* Default-568h@2x.png */; };
 		D6CBC12D18166CD2003E6881 /* RKDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CBC12C18166CD2003E6881 /* RKDViewController.m */; };
 		D6CBC13018166CD2003E6881 /* RKDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6CBC12E18166CD2003E6881 /* RKDViewController.xib */; };
+		D6CBC139181670E8003E6881 /* RKDNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CBC138181670E8003E6881 /* RKDNetworking.m */; };
+		D6CBC13D18167522003E6881 /* RKDCompany.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CBC13C18167522003E6881 /* RKDCompany.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		05D5A352C08B4088A8DCC7E3 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		A3306DDD8BDE414883EC56FC /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6CBC11018166CD2003E6881 /* restkit_demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = restkit_demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6CBC11318166CD2003E6881 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D6CBC11518166CD2003E6881 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -37,6 +42,10 @@
 		D6CBC12B18166CD2003E6881 /* RKDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKDViewController.h; sourceTree = "<group>"; };
 		D6CBC12C18166CD2003E6881 /* RKDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKDViewController.m; sourceTree = "<group>"; };
 		D6CBC12F18166CD2003E6881 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RKDViewController.xib; sourceTree = "<group>"; };
+		D6CBC137181670E8003E6881 /* RKDNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKDNetworking.h; sourceTree = "<group>"; };
+		D6CBC138181670E8003E6881 /* RKDNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKDNetworking.m; sourceTree = "<group>"; };
+		D6CBC13B18167522003E6881 /* RKDCompany.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKDCompany.h; sourceTree = "<group>"; };
+		D6CBC13C18167522003E6881 /* RKDCompany.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKDCompany.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +56,7 @@
 				D6CBC11418166CD2003E6881 /* UIKit.framework in Frameworks */,
 				D6CBC11618166CD2003E6881 /* Foundation.framework in Frameworks */,
 				D6CBC11818166CD2003E6881 /* CoreGraphics.framework in Frameworks */,
+				118254FA21314B2D97707815 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +69,7 @@
 				D6CBC11918166CD2003E6881 /* restkit_demo */,
 				D6CBC11218166CD2003E6881 /* Frameworks */,
 				D6CBC11118166CD2003E6881 /* Products */,
+				05D5A352C08B4088A8DCC7E3 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +87,7 @@
 				D6CBC11318166CD2003E6881 /* UIKit.framework */,
 				D6CBC11518166CD2003E6881 /* Foundation.framework */,
 				D6CBC11718166CD2003E6881 /* CoreGraphics.framework */,
+				A3306DDD8BDE414883EC56FC /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -83,6 +95,8 @@
 		D6CBC11918166CD2003E6881 /* restkit_demo */ = {
 			isa = PBXGroup;
 			children = (
+				D6CBC13A18167493003E6881 /* Models */,
+				D6CBC13618167086003E6881 /* Library */,
 				D6CBC12218166CD2003E6881 /* RKDAppDelegate.h */,
 				D6CBC12318166CD2003E6881 /* RKDAppDelegate.m */,
 				D6CBC12B18166CD2003E6881 /* RKDViewController.h */,
@@ -107,6 +121,24 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		D6CBC13618167086003E6881 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				D6CBC137181670E8003E6881 /* RKDNetworking.h */,
+				D6CBC138181670E8003E6881 /* RKDNetworking.m */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		D6CBC13A18167493003E6881 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D6CBC13B18167522003E6881 /* RKDCompany.h */,
+				D6CBC13C18167522003E6881 /* RKDCompany.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -114,9 +146,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D6CBC13318166CD2003E6881 /* Build configuration list for PBXNativeTarget "restkit_demo" */;
 			buildPhases = (
+				79117ABD050E4114B6EE6E8B /* Check Pods Manifest.lock */,
 				D6CBC10C18166CD2003E6881 /* Sources */,
 				D6CBC10D18166CD2003E6881 /* Frameworks */,
 				D6CBC10E18166CD2003E6881 /* Resources */,
+				A4DA2C7663DC4027A139E120 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -169,6 +203,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		79117ABD050E4114B6EE6E8B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A4DA2C7663DC4027A139E120 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D6CBC10C18166CD2003E6881 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -177,6 +244,8 @@
 				D6CBC12018166CD2003E6881 /* main.m in Sources */,
 				D6CBC12418166CD2003E6881 /* RKDAppDelegate.m in Sources */,
 				D6CBC12D18166CD2003E6881 /* RKDViewController.m in Sources */,
+				D6CBC139181670E8003E6881 /* RKDNetworking.m in Sources */,
+				D6CBC13D18167522003E6881 /* RKDCompany.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +329,7 @@
 		};
 		D6CBC13418166CD2003E6881 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05D5A352C08B4088A8DCC7E3 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "restkit_demo/restkit_demo-Prefix.pch";
@@ -271,6 +341,7 @@
 		};
 		D6CBC13518166CD2003E6881 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05D5A352C08B4088A8DCC7E3 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "restkit_demo/restkit_demo-Prefix.pch";
@@ -299,6 +370,7 @@
 				D6CBC13518166CD2003E6881 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
